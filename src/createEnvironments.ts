@@ -27,7 +27,7 @@ async function createEnvironments() {
   const allEnvironments = await getEnvironmentsToCreate();
   const environmentsToCreate = allEnvironments.map((env) => ({
     name: env.name.toLocaleLowerCase().replace(/\s+/g, "-"),
-    urls: [{ locale: "en-us", url: env.url }],
+    urls: [{ locale: "en-us", url: env.url.replace(/\/$/, "") }],
   }));
   console.log(`Creating ${allEnvironments.length} environments`);
   await processInBatches({
