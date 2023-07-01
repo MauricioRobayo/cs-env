@@ -1,0 +1,21 @@
+{
+  "name": "cs-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-environments": "ts-node ./src/createEnvironments.ts",
+    "delete-environments": "ts-node ./src/deleteEnvironments.ts",
+    "get-environments": "ts-node ./src/getEnvironments.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.3.3",
+    "dotenv": "^16.3.1",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
